@@ -7,7 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
+#import "TGBike.h"
 
 @interface ViewController : UIViewController
+{
+    NSTimer *renderTimer;
+    
+    CALayer	*rootLayer;
+    
+    CGMutablePathRef player1Path;
+    CGMutablePathRef player2Path;
+    
+    CAShapeLayer *player1ShapeLayer;
+    CAShapeLayer *player2ShapeLayer;
+    
+    TGBike *bike1;
+    TGBike *bike2;
+}
 
 @end

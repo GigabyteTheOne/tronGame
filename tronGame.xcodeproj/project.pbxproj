@@ -21,6 +21,7 @@
 		E713665C18976DCB00E0186C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E713663E18976DCB00E0186C /* UIKit.framework */; };
 		E713666418976DCC00E0186C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E713666218976DCC00E0186C /* InfoPlist.strings */; };
 		E713666618976DCC00E0186C /* tronGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E713666518976DCC00E0186C /* tronGameTests.m */; };
+		E713667218976EC900E0186C /* TGBike.m in Sources */ = {isa = PBXBuildFile; fileRef = E713667118976EC900E0186C /* TGBike.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		E713666118976DCB00E0186C /* tronGameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tronGameTests-Info.plist"; sourceTree = "<group>"; };
 		E713666318976DCC00E0186C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E713666518976DCC00E0186C /* tronGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tronGameTests.m; sourceTree = "<group>"; };
+		E713667018976EC900E0186C /* TGBike.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TGBike.h; path = Objects/TGBike.h; sourceTree = "<group>"; };
+		E713667118976EC900E0186C /* TGBike.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TGBike.m; path = Objects/TGBike.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		E713664018976DCB00E0186C /* tronGame */ = {
 			isa = PBXGroup;
 			children = (
+				E713666F18976E9E00E0186C /* Objects */,
 				E713664918976DCB00E0186C /* AppDelegate.h */,
 				E713664A18976DCB00E0186C /* AppDelegate.m */,
 				E713664C18976DCB00E0186C /* Main.storyboard */,
@@ -150,6 +154,15 @@
 				E713666218976DCC00E0186C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E713666F18976E9E00E0186C /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				E713667018976EC900E0186C /* TGBike.h */,
+				E713667118976EC900E0186C /* TGBike.m */,
+			);
+			name = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E713665118976DCB00E0186C /* ViewController.m in Sources */,
+				E713667218976EC900E0186C /* TGBike.m in Sources */,
 				E713664B18976DCB00E0186C /* AppDelegate.m in Sources */,
 				E713664718976DCB00E0186C /* main.m in Sources */,
 			);
@@ -318,7 +332,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: FreshStore OOO (2VK89L9VTC)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -381,6 +395,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "tronGame/tronGame-Prefix.pch";
 				INFOPLIST_FILE = "tronGame/tronGame-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -394,6 +409,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "tronGame/tronGame-Prefix.pch";
 				INFOPLIST_FILE = "tronGame/tronGame-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
